@@ -89,6 +89,8 @@ jobs:
         # policy for non-official actions; a tag could be re-pointed. v4 runs on
         # Node.js 24 (v3 targeted the now-deprecated Node.js 20).
         uses: android-actions/setup-android@40fd30fb8d7440372e1316f5d1809ec01dcd3699 # v4.0.1
+        with:
+          packages: 'platform-tools'
 
       - name: Install Android NDK, platform, and build-tools
         run: |
