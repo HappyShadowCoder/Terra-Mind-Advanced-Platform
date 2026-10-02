@@ -1,6 +1,6 @@
-# Contributing to GeoLibre
+# Contributing to Terra Mind Advanced Platform (TMAP)
 
-Thanks for your interest in improving GeoLibre. The full contributing guide,
+Thanks for your interest in improving Terra Mind Advanced Platform (TMAP). The full contributing guide,
 including development setup, the repository layout, the quality gate, and the
 pull request workflow, lives in the documentation:
 

@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-title: GeoLibre
+title: Terra Mind Advanced Platform (TMAP)
 message: "If you use this software, please cite it using the metadata from this file."
 type: software
-abstract: "GeoLibre is a free and open-source, lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data across web browsers, desktop applications, mobile devices, and Jupyter notebooks while keeping data local and private."
+abstract: "Terra Mind Advanced Platform (TMAP) is a free and open-source, lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data across web browsers, desktop applications, mobile devices, and Jupyter notebooks while keeping data local and private."
 authors:
   - given-names: Qiusheng
     family-names: Wu

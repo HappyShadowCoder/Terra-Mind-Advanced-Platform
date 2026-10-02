@@ -7,16 +7,16 @@ hide:
 <section class="hero">
   <div class="hero__content">
     <p class="eyebrow">Cloud-native GIS platform</p>
-    <h1>A free and open-source, lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data.</h1>
+    <h1>Terra Mind Advanced Platform (TMAP)</h1>
     <p class="hero__lead">
-      GeoLibre runs everywhere you do, in the web browser, on the desktop, on
+      Terra Mind Advanced Platform (TMAP) runs everywhere you do, in the web browser, on the desktop, on
       mobile, and inside Jupyter notebooks, all while keeping your data local
       and private. It is built with Tauri, React, TypeScript, MapLibre GL JS,
       DuckDB-WASM Spatial, and deck.gl, with fast local and cloud-native data
       work, project files, styling, plugins, and modern geospatial workflows.
     </p>
     <div class="hero__actions">
-      <a class="md-button md-button--primary" href="https://web.geolibre.app/">Launch GeoLibre Web</a>
+      <a class="md-button md-button--primary" href="https://web.geolibre.app/">Launch TMAP Web</a>
       <a class="md-button" href="getting-started/">Get started</a>
       <a class="md-button" href="user-guide/interface/">User guide</a>
       <a class="md-button" href="downloads/">Download app</a>
@@ -36,7 +36,7 @@ hide:
   </div>
 </section>
 
-## What GeoLibre does today
+## What TMAP does today
 
 <div class="feature-grid" markdown>
 

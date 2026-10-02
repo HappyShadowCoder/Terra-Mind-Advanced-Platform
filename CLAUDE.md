@@ -4,7 +4,7 @@ Guidance for Claude Code (claude.ai/code) when working in this repository.
 
 ## Repository shape
 
-GeoLibre is a single **npm workspaces monorepo** (`apps/*`, `packages/*`,
+Terra Mind Advanced Platform (TMAP) is a single **npm workspaces monorepo** (`apps/*`, `packages/*`,
 `workers/*`) plus two non-npm components: a Python FastAPI sidecar
 (`backend/geolibre_server`) and a separate Python package (`python/`, the
 `geolibre` Jupyter anywidget). One `npm install` at the root wires up every JS

@@ -1961,11 +1961,11 @@ export function TopToolbar({
   // its trigger Button this class instead of `toolbarButtonClass`.
   const toolbarSecondaryButtonClass = cn(toolbarButtonClass, "hidden md:inline-flex");
   const toolbarIconClassName = cn("h-3.5 w-3.5", showLabels && "sm:me-1");
-  // "GeoLibre Desktop" is the *desktop* product name. `isTauri()` alone is true
-  // on iOS and Android too — where the app is named plain "GeoLibre" (the bundle
+  // "TMAP Desktop" is the *desktop* product name. `isTauri()` alone is true
+  // on iOS and Android too — where the app is named plain "TMAP" (the bundle
   // name from tauri.ios.conf.json, the home-screen icon, and the store listing),
-  // so titling it "GeoLibre Desktop" there contradicts every other surface.
-  const appTitle = isTauri() && !isMobile() ? "GeoLibre Desktop" : "GeoLibre";
+  // so titling it "Terra Mind Advanced Platform (TMAP) Desktop" there contradicts every other surface.
+  const appTitle = isTauri() && !isMobile() ? "Terra Mind Advanced Platform (TMAP) Desktop" : "Terra Mind Advanced Platform (TMAP)";
   const renderToolbarLabel = (label: string) =>
     showLabels ? <span className="hidden sm:inline">{label}</span> : null;
   const chrome: ToolbarChrome = {

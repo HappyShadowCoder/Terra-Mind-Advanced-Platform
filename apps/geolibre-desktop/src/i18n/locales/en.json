@@ -53,8 +53,8 @@
   },
   "about": {
     "trigger": "About",
-    "title": "About GeoLibre",
-    "description": "GeoLibre is a lightweight cloud-native GIS platform.",
+    "title": "About Terra Mind Advanced Platform (TMAP)",
+    "description": "Terra Mind Advanced Platform (TMAP) is a lightweight cloud-native GIS platform.",
     "version": "Version",
     "checkForUpdates": "Check for updates",
     "tryAgain": "Try again",
@@ -1460,7 +1460,7 @@
       "groupNavigation": "Group north arrow & scale bar",
       "footer": "Footer text",
       "date": "Date",
-      "attribution": "Include GeoLibre attribution",
+      "attribution": "Include TMAP attribution",
       "pageBorder": "Page border",
       "infoBlock": "Info block (title block)",
       "colorbar": "Colorbar",
@@ -1739,9 +1739,9 @@
   },
   "auth": {
     "unavailableTitle": "Sign-in is unavailable",
-    "unavailableDescription": "GeoLibre could not reach the sign-in service, so it cannot tell whether you are signed in. This is usually temporary; if it persists, this deployment's authentication settings may need attention.",
+    "unavailableDescription": "TMAP could not reach the sign-in service, so it cannot tell whether you are signed in. This is usually temporary; if it persists, this deployment's authentication settings may need attention.",
     "retry": "Try again",
-    "signInTitle": "Sign in to GeoLibre",
+    "signInTitle": "Sign in to Terra Mind Advanced Platform (TMAP)",
     "signInDescription": "This deployment requires an account. You will be taken to a secure sign-in page and returned here.",
     "signIn": "Sign in",
     "signOut": "Sign out",
@@ -1898,7 +1898,7 @@
     "noticeDesc": "Opening a knowledge card sends the coordinates of the place you clicked (and the title of any nearby article you open) to Wikipedia's public API to fetch a summary and photo — your coordinates leave your device for those requests."
   },
   "onboarding": {
-    "title": "Welcome to GeoLibre",
+    "title": "Welcome to Terra Mind Advanced Platform (TMAP)",
     "description": "Choose your experience level to tailor the interface. You can change this any time in Settings → Interface.",
     "level": {
       "beginner": {
@@ -1911,7 +1911,7 @@
       },
       "advanced": {
         "title": "Advanced",
-        "description": "Show everything GeoLibre has to offer."
+        "description": "Show everything Terra Mind Advanced Platform (TMAP) has to offer."
       }
     },
     "showEverything": "Skip — show everything"
@@ -2735,7 +2735,7 @@
       "terrain": "Terrain",
       "remoteSensing": "Remote Sensing",
       "projection": "Projection",
-      "geolibre": "GeoLibre Toolbox",
+      "geolibre": "TMAP Toolbox",
       "subGroupGeometry": "Geometry",
       "subGroupOverlay": "Overlay",
       "subGroupJoin": "Join",

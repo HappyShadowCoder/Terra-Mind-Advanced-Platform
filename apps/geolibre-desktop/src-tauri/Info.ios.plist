@@ -22,7 +22,7 @@
 <plist version="1.0">
   <dict>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string>GeoLibre uses your location to center the map, capture GPS points during Field Collection, and record GPS tracks.</string>
+    <string>Terra Mind Advanced Platform uses your location to center the map, capture GPS points during Field Collection, and record GPS tracks.</string>
 
     <!--
       Export compliance. App Store Connect asks about encryption on *every*
