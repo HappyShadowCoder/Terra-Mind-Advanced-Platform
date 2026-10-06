@@ -1,5 +1,6 @@
 import {
   DEFAULT_LAYER_STYLE,
+  createDefaultMapView,
   createEmptyProject,
   type GeoLibreLayer,
   type GeoLibreProject,
@@ -681,7 +682,7 @@ function parseMapView(map: CimObject): { view: MapViewState; extentRestored: boo
 }
 
 function defaultView(): MapViewState {
-  return { center: [-100, 40], zoom: 2, bearing: 0, pitch: 0 };
+  return createDefaultMapView();
 }
 
 function mercatorLongitude(x: number): number {

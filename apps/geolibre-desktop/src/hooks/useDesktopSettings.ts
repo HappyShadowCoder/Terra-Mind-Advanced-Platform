@@ -204,7 +204,7 @@ export const DEFAULT_UI_PROFILE_SETTINGS: UiProfileSettings = {
 };
 
 export const DEFAULT_UPDATE_SETTINGS: UpdateSettings = {
-  checkOnStartup: true,
+  checkOnStartup: false,
   notificationLevel: "all",
 };
 
@@ -280,9 +280,22 @@ export function normalizeDesktopSettings(settings: unknown): DesktopSettings {
 function normalizeStartupSettings(startup: unknown): StartupSettings {
   if (!startup || typeof startup !== "object") return DEFAULT_STARTUP_SETTINGS;
   const candidate = startup as Partial<StartupSettings>;
+  let center = candidate.center;
+  let zoom = candidate.zoom;
+  // Migrate legacy default center (US [-100, 40]) to India
+  if (
+    Array.isArray(center) &&
+    Math.abs(center[0] - (-100)) < 1e-4 &&
+    Math.abs(center[1] - 40) < 1e-4
+  ) {
+    center = undefined;
+    if (zoom === 2) {
+      zoom = undefined;
+    }
+  }
   const view = normalizeMapViewState({
-    center: candidate.center,
-    zoom: candidate.zoom,
+    center,
+    zoom,
     bearing: 0,
     pitch: 0,
   });
@@ -398,7 +411,7 @@ function normalizeUpdateSettings(updates: unknown): UpdateSettings {
     checkOnStartup:
       typeof candidate.checkOnStartup === "boolean"
         ? candidate.checkOnStartup
-        : DEFAULT_UPDATE_SETTINGS.checkOnStartup,
+        : false,
     notificationLevel:
       typeof candidate.notificationLevel === "string" &&
       UPDATE_NOTIFICATION_LEVELS.includes(candidate.notificationLevel as UpdateNotificationLevel)

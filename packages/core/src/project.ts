@@ -87,7 +87,7 @@ export function normalizeBlankBackgroundColor(value: unknown): string | null {
 
 export function createDefaultMapView(): MapViewState {
   return {
-    center: [-100, 40],
+    center: [78.9629, 20.5937],
     zoom: 2,
     bearing: 0,
     pitch: 0,

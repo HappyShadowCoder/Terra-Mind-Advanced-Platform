@@ -25,7 +25,7 @@ however, silently ignore what you meant — check the result with
 {
   "version": "0.1.0",
   "name": "Cities",
-  "mapView": { "center": [-100, 40], "zoom": 4, "bearing": 0, "pitch": 0 },
+  "mapView": { "center": [78.9629, 20.5937], "zoom": 4, "bearing": 0, "pitch": 0 },
   "basemapStyleUrl": "https://tiles.openfreemap.org/styles/positron",
   "basemapVisible": true,
   "basemapOpacity": 1,

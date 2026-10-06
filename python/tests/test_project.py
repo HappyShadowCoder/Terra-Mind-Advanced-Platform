@@ -28,7 +28,7 @@ POINT_FC = {
 def test_build_empty_project_defaults():
     proj = project.build_empty_project()
     assert proj["version"] == project.PROJECT_VERSION
-    assert proj["mapView"]["center"] == [-100, 40]
+    assert proj["mapView"]["center"] == [78.9629, 20.5937]
     assert proj["layers"] == []
     # Preferences must be a fresh copy, not the shared default.
     assert proj["preferences"] is not project.DEFAULT_PROJECT_PREFERENCES

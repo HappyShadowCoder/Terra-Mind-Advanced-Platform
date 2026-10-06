@@ -387,7 +387,7 @@ describe("ArcGIS Pro project import", () => {
     );
     // Falls back to the generic view rather than reading the projected numbers
     // as degrees.
-    assert.deepEqual(result.project.mapView.center, [-100, 40]);
+    assert.deepEqual(result.project.mapView.center, [78.9629, 20.5937]);
   });
 
   it("converts each CIM color model rather than reading every one as RGB", () => {

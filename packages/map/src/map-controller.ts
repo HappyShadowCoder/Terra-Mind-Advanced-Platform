@@ -7,6 +7,7 @@ import {
   isRegionalBasemapSentinel,
   PLANETARY_BASEMAP_SENTINEL_PREFIX,
   type RegionalBasemap,
+  createDefaultMapView,
   scaleAltitudeToActiveBody,
   useAppStore,
 } from "@geolibre/core";
@@ -569,8 +570,8 @@ export class MapController {
     this.map = new maplibregl.Map({
       container,
       style: deferMapboxStyle ? createBlankMapStyle() : resolveMapStyle(this.basemapStyleUrl),
-      center: view?.center ?? [-100, 40],
-      zoom: view?.zoom ?? 2,
+      center: view?.center ?? createDefaultMapView().center,
+      zoom: view?.zoom ?? createDefaultMapView().zoom,
       bearing: view?.bearing ?? 0,
       pitch: view?.pitch ?? 0,
       minZoom,
@@ -1218,12 +1219,7 @@ export class MapController {
 
   readView(): MapViewState {
     if (!this.map) {
-      return {
-        center: [-100, 40],
-        zoom: 2,
-        bearing: 0,
-        pitch: 0,
-      };
+      return createDefaultMapView();
     }
     const c = this.map.getCenter();
     const b = this.map.getBounds();

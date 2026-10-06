@@ -194,7 +194,7 @@ describe("QGIS project import", () => {
   it("falls back to the default view for a missing or unsupported-CRS extent", () => {
     const missing = importQgisProject(projectXml({ extent: "" }), "/work/example.qgs");
     assert.deepEqual(missing.project.mapView, {
-      center: [-100, 40],
+      center: [78.9629, 20.5937],
       zoom: 2,
       bearing: 0,
       pitch: 0,
@@ -202,7 +202,7 @@ describe("QGIS project import", () => {
 
     const projected = importQgisProject(projectXml({ authId: "EPSG:32618" }), "/work/example.qgs");
     assert.deepEqual(projected.project.mapView, {
-      center: [-100, 40],
+      center: [78.9629, 20.5937],
       zoom: 2,
       bearing: 0,
       pitch: 0,

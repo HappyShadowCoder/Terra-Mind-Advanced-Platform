@@ -19,7 +19,7 @@ describe("startup project settings", () => {
       projectPath: null,
       projectName: null,
       globeByDefault: true,
-      center: [-100, 40],
+      center: [78.9629, 20.5937],
       zoom: 2,
     });
   });
@@ -56,8 +56,13 @@ describe("startup project settings", () => {
   });
 
   it("normalizes the empty-workspace camera", () => {
-    assert.deepEqual(normalizeDesktopSettings({ startup: {} }).startup.center, [-100, 40]);
+    assert.deepEqual(normalizeDesktopSettings({ startup: {} }).startup.center, [78.9629, 20.5937]);
     assert.equal(normalizeDesktopSettings({ startup: {} }).startup.zoom, 2);
+    // Migrates legacy US center default
+    assert.deepEqual(
+      normalizeDesktopSettings({ startup: { center: [-100, 40], zoom: 2 } }).startup.center,
+      [78.9629, 20.5937],
+    );
     assert.deepEqual(
       normalizeDesktopSettings({ startup: { center: [-240, 120], zoom: 30 } }).startup.center,
       [-180, 90],
@@ -165,7 +170,7 @@ describe("planStartup", () => {
         {
           kind: "default",
           projection: globeByDefault ? "globe" : "mercator",
-          center: [-100, 40],
+          center: [78.9629, 20.5937],
           zoom: 2,
         },
       );
@@ -181,7 +186,7 @@ describe("planStartup", () => {
         settings: { ...DEFAULT_STARTUP_SETTINGS, mode: "last" },
         recentProjects: [],
       }),
-      { kind: "default", projection: "globe", center: [-100, 40], zoom: 2 },
+      { kind: "default", projection: "globe", center: [78.9629, 20.5937], zoom: 2 },
     );
     assert.deepEqual(
       planStartup({
@@ -190,7 +195,7 @@ describe("planStartup", () => {
         settings: { ...DEFAULT_STARTUP_SETTINGS, globeByDefault: false },
         recentProjects: recent(PINNED),
       }),
-      { kind: "default", projection: "mercator", center: [-100, 40], zoom: 2 },
+      { kind: "default", projection: "mercator", center: [78.9629, 20.5937], zoom: 2 },
     );
   });
 });

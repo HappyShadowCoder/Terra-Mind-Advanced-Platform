@@ -2,6 +2,7 @@ import {
   DEFAULT_BASEMAP,
   DEFAULT_LAYER_STYLE,
   VECTOR_COLOR_RAMPS,
+  createDefaultMapView,
   createEmptyProject,
   type GeoLibreLayer,
   type GeoLibreProject,
@@ -373,7 +374,7 @@ function parseMapView(document: Document): MapViewState {
       };
     }
   }
-  return { center: [-100, 40], zoom: 2, bearing: 0, pitch: 0 };
+  return createDefaultMapView();
 }
 
 function toWgs84(x: number, y: number, authId: string): [number, number] | null {
