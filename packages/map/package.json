@@ -64,9 +64,9 @@
     "build": "tsdown src/headless.ts src/derived-geometry.ts src/pmtiles-layer.ts src/style-layer-ids.ts --format esm --dts"
   },
   "dependencies": {
-    "@cesium/engine": "^26.2.0",
+    "@cesium/engine": "^26.4.0",
     "@geolibre/core": "*",
-    "@maplibre/geojson-vt": "^6.1.1",
+    "@maplibre/geojson-vt": "^6.1.2",
     "@maplibre/vt-pbf": "^4.3.2",
     "@protomaps/basemaps": "^5.7.2",
     "@turf/bbox": "^7.4.0",
@@ -77,20 +77,20 @@
     "@turf/convex": "^7.4.0",
     "@turf/helpers": "^7.4.0",
     "@turf/mask": "^7.4.0",
-    "cesium": "^1.144.0",
-    "fast-xml-parser": "^5.11.1",
+    "cesium": "^1.146.0",
+    "fast-xml-parser": "^5.11.2",
     "geotiff": "^3.0.5",
-    "maplibre-gl": "^6.6.0",
-    "maplibre-gl-layer-control": "^0.17.4",
+    "maplibre-gl": "^6.12.0",
+    "maplibre-gl-layer-control": "^0.18.1",
     "pmtiles": "^4.5.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@types/geojson": "^7946.0.16",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.5",
-    "tsdown": "^0.22.14",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tsdown": "^0.23.0",
     "typescript": "^7.0.2"
   },
   "peerDependencies": {
